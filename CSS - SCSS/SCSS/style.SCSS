@@ -1,0 +1,45 @@
+$background1: #eaeaea;
+$policetext: roboto, serif;
+
+@font-face {   
+    font-family: 'roboto';
+    src: url('../images/police/roboto-black.ttf');
+}
+
+@media screen and (max-width: 480px)
+{
+    .bloc_page{
+        padding-top: 2%;
+    }
+
+    body{
+        margin: 0 auto;
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header>figure{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+
+    .localisation{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: $background1;
+        font-family: $policetext;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 2px 1px #cecece inset;
+    }
+    .localisation>i{
+        padding-right: 5%;
+    }
+}
