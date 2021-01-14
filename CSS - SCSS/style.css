@@ -28,14 +28,13 @@
   .localisation {
     width: 100%;
     display: flex;
-    align-items: center;
     background-color: #eaeaea;
     font-family: roboto, serif;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 2px 1px #cecece inset;
   }
-  /* line 42, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 41, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   .localisation > i {
     padding-right: 5%;
   }
