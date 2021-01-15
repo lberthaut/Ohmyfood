@@ -1,9 +1,15 @@
 $background1: #eaeaea;
+$background2: #f6f6f6;
 $policetext: roboto, serif;
 
 @font-face {   
     font-family: 'roboto';
     src: url('../images/police/roboto-black.ttf');
+    src: url('../images/police/roboto-bold.ttf');
+    src: url('../images/police/roboto-light.ttf');
+    src: url('../images/police/roboto-medium.ttf');
+    src: url('../images/police/roboto-regular.ttf');
+    src: url('../images/police/roboto-thin.ttf');
 }
 
 @media screen and (max-width: 480px)
@@ -37,8 +43,35 @@ $policetext: roboto, serif;
         justify-content: center;
         align-items: center;
         box-shadow: 0px 2px 1px #cecece inset;
+        font-weight: bold;
     }
     .localisation>i{
         padding-right: 5%;
+    }
+
+    section{
+        font-family: $policetext;
+        background-color: $background2;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    section>h1{
+        margin: 0 auto;
+
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    section>input{
+        background: linear-gradient(#FF79DA, #9356DC);
+        border-radius: 50px;
+        text-decoration: none;
+        padding: 13px;
+        color: #FFFFFF;
+        font-weight: bold;
+        border: none;
+        box-shadow: 0.5px 0.5px 2px #000;
     }
 }

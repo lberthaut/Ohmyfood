@@ -1,30 +1,35 @@
 @font-face {
   font-family: 'roboto';
   src: url("../images/police/roboto-black.ttf");
+  src: url("../images/police/roboto-bold.ttf");
+  src: url("../images/police/roboto-light.ttf");
+  src: url("../images/police/roboto-medium.ttf");
+  src: url("../images/police/roboto-regular.ttf");
+  src: url("../images/police/roboto-thin.ttf");
 }
 
 @media screen and (max-width: 480px) {
-  /* line 11, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 17, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   .bloc_page {
     padding-top: 2%;
   }
-  /* line 15, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 21, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   body {
     margin: 0 auto;
   }
-  /* line 19, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 25, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   header {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  /* line 25, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 31, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   header > figure {
     width: 100%;
     margin: 0 auto;
     text-align: center;
   }
-  /* line 32, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 38, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   .localisation {
     width: 100%;
     display: flex;
@@ -33,10 +38,36 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px 2px 1px #cecece inset;
+    font-weight: bold;
   }
-  /* line 41, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 48, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   .localisation > i {
     padding-right: 5%;
+  }
+  /* line 52, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  section {
+    font-family: roboto, serif;
+    background-color: #f6f6f6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  /* line 60, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  section > h1 {
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  /* line 67, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  section > input {
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 13px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0.5px 0.5px 2px #000;
   }
 }
 
