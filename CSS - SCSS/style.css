@@ -87,7 +87,7 @@
   }
   /* line 96, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   aside > h2 {
-    padding-right: 45%;
+    padding-right: 40%;
     font-weight: bold;
   }
   /* line 101, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
@@ -125,45 +125,86 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 50px;
+    align-items: center;
+    padding-bottom: 60px;
   }
-  /* line 136, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 138, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  nav > h2 {
+    padding-right: 55%;
+    font-size: 30px;
+  }
+  /* line 143, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   .block_restau {
+    height: 210px;
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 20%;
+    justify-content: space-around;
+    background-color: white;
     border-radius: 25px;
-    border: solid black 1px;
-    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 3px #d4d4d4;
   }
-  /* line 146, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
-  .block_img {
-    height: 66%;
-  }
-  /* line 150, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 155, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   .block_restau img {
     width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
   }
-  /* line 156, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 162, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   .block_restau p {
     margin: 0 auto;
   }
-  /* line 160, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 166, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   .text_restau {
-    height: 34%;
-    display: block;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    height: 70px;
+    padding-left: 5%;
+    padding-top: 4%;
+    line-height: 0.4;
+    color: #000000;
   }
-  /* line 169, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  /* line 174, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  .restau_title {
+    font-weight: bold;
+  }
+  /* line 178, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
   .heart {
     text-align: right;
     padding-right: 4%;
     font-size: 24px;
+  }
+  /* line 184, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  footer {
+    background-color: #353535;
+    padding-bottom: 20px;
+  }
+  /* line 189, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  footer > img {
+    filter: invert(100%);
+    width: 25%;
+    padding-top: 4%;
+    padding-left: 4%;
+  }
+  /* line 196, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  footer > a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    color: #FFFFFF;
+    align-items: center;
+    padding-left: 4%;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  /* line 208, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  footer > a > i {
+    padding-right: 2%;
+  }
+  /* line 212, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
+  i.fa.fa-cutlery {
+    padding-right: 3%;
   }
 }
 

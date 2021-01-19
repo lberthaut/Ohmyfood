@@ -94,7 +94,7 @@ $policelogo: shrikhand, serif;
     }
 
     aside>h2{
-        padding-right: 45%;
+        padding-right: 40%;
         font-weight: bold;
     }
 
@@ -131,27 +131,32 @@ $policelogo: shrikhand, serif;
         flex-direction: column;
         flex-wrap: wrap;
         padding-top: 50px;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    nav>h2{
+        padding-right: 55%;
+        font-size: 30px;
     }
 
     .block_restau{
+        height: 210px;
         display: flex;
         flex-direction: column;
         width: 90%;
-        height: 20%;
+        justify-content: space-around;
+        background-color: white;
         border-radius: 25px;
-        border: solid black 1px;
-        background-color: #FFFFFF;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 3px #d4d4d4;
     }
-
-    .block_img{
-        height: 66%;
-    }
-    /* ajout du block image en div sur le html*/
 
     .block_restau img{
         width: 100%;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 25px 25px 0px 0px;
     }
 
     .block_restau p{
@@ -159,12 +164,15 @@ $policelogo: shrikhand, serif;
     }
 
     .text_restau{
-        height: 34%;
-        display: block;
-        flex-direction: row;
-        flex-wrap: wrap;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+        height: 70px;
+        padding-left: 5%;
+        padding-top: 4%;
+        line-height: 0.4;
+        color: #000000;
+    }
+
+    .restau_title{
+        font-weight: bold;
     }
 
     .heart{
@@ -172,4 +180,37 @@ $policelogo: shrikhand, serif;
         padding-right: 4%;
         font-size: 24px;
     }
+
+    footer{
+        background-color: #353535;
+        padding-bottom: 20px;
+    }
+
+    footer>img{
+        filter: invert(100%);
+        width: 25%;
+        padding-top: 4%;
+        padding-left: 4%;
+    }
+
+    footer>a{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        color: #FFFFFF;
+        align-items: center;
+        padding-left: 4%;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    footer>a>i{
+        padding-right: 2%;
+    }
+
+    i.fa.fa-cutlery{
+        padding-right: 3%;
+    }
+
 }
