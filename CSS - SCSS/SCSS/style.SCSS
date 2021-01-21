@@ -89,6 +89,11 @@ section>input{
     font-weight: bold;
     border: none;
     box-shadow: 0.5px 0.5px 2px #000;
+    transform: scale(1);
+    transition: transform 400ms;
+    &:hover{
+        transform: scale(1.5);
+    }
 }
 
 aside{
