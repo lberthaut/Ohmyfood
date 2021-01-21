@@ -89,11 +89,6 @@ section>input{
     font-weight: bold;
     border: none;
     box-shadow: 0.5px 0.5px 2px #000;
-    transform: scale(1);
-    transition: transform 400ms;
-    &:hover{
-        transform: scale(1.5);
-    }
 }
 
 aside{
@@ -195,6 +190,10 @@ nav>h2{
     text-align: right;
     padding-right: 4%;
     font-size: 24px;
+    transition: color 400ms;
+        &:hover{
+            color: $darkpurple;
+        }
 }
 
 footer{
