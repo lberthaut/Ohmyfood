@@ -89,6 +89,10 @@ section>input{
     font-weight: bold;
     border: none;
     box-shadow: 0.5px 0.5px 2px #000;
+    transition: all 200ms;
+        &:hover{
+            background: linear-gradient($darkpurple, $lightpurple);
+        }
 }
 
 aside{
@@ -114,6 +118,11 @@ aside>h2{
     box-shadow: 6px 4px 8px #e7e7e7;
     border-radius: 15px;
     margin-bottom: 40px;
+    transition: all 300ms;
+        &:hover{
+            background-color: $background2;
+            transform: scale(1.1)
+        }
 }
 
 aside i{
@@ -172,13 +181,17 @@ nav>h2{
 
 .block_restau p{
     margin: 0 auto;
+    display: block;
+    padding-bottom: 8px;
 }
 
 .text_restau{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: 70px;
+    padding-top: 4px;
     padding-left: 5%;
-    padding-top: 4%;
-    line-height: 0.4;
     color: #000000;
 }
 
@@ -187,12 +200,22 @@ nav>h2{
 }
 
 .heart{
-    text-align: right;
-    padding-right: 4%;
+    margin-left: 150px;
+    margin-top: 10px;
     font-size: 24px;
-    transition: color 400ms;
-        &:hover{
+    color: #FFFFFF;
+    text-shadow: 0.2em 0.1em 0.6em $lightpurple;
+    transition: all 200ms;
+        &:active{
             color: $darkpurple;
+        }
+}
+
+.heart>i{
+    transform: scale(1);
+    transition: all 500ms;
+        &:hover{
+            transform: scale(1.2)
         }
 }
 
@@ -209,8 +232,6 @@ footer{
 footer>img{
     filter: invert(100%);
     width: 20%;
-    padding-left: 3%;
-    padding-right: 5%;
 }
 
 footer>a{
@@ -221,12 +242,12 @@ footer>a{
     align-items: center;
     font-weight: bold;
     font-size: 12px;
-    width: 20%;
 }
 
 footer>a>i{
-    padding-right: 4%;
+    padding-right: 12%;
 }
+
 
 
 /*Query Smartphone*/
@@ -235,7 +256,7 @@ footer>a>i{
 {
     .bloc_page{
         padding-top: 4%;
-        margin: 0;
+        margin: 5%;
     }
 
     body{
@@ -295,6 +316,10 @@ footer>a>i{
         font-weight: bold;
         border: none;
         box-shadow: 0.5px 0.5px 2px #000;
+        transition: all 200ms;
+        &:active{
+            background: linear-gradient($darkpurple, $lightpurple);
+        }
     }
 
     aside{
@@ -378,9 +403,6 @@ footer>a>i{
 
     .text_restau{
         height: 70px;
-        padding-left: 5%;
-        padding-top: 4%;
-        line-height: 0.4;
         color: #000000;
     }
 
@@ -389,9 +411,14 @@ footer>a>i{
     }
 
     .heart{
-        text-align: right;
-        padding-right: 4%;
+        padding-left: 8%;
         font-size: 24px;
+        color: #FFFFFF;
+        text-shadow: 0.2em 0.1em 0.6em $lightpurple;
+        transition: color 200ms;
+            &:active{
+                color: $darkpurple;
+            }
     }
 
     footer{
@@ -415,19 +442,252 @@ footer>a>i{
         flex-wrap: nowrap;
         color: #FFFFFF;
         align-items: center;
-        padding-left: 4%;
         font-weight: bold;
         font-size: 12px;
-        line-height: 0.5;
+        line-height: 1.1;
     }
 
     footer>a>i{
-        padding-right: 2%;
+        padding: 0;
     }
-
-    i.fa.fa-cutlery{
-        padding-right: 3%;
-    }
-
 }
 
+
+
+/*Query tablets*/
+
+@media screen and (min-width: 481px) and (max-width: 999px)
+{
+    .bloc_page{
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    body{
+        font-family: $policetext;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header>figure{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    .localisation{
+        width: 100%;
+        display: flex;
+        background-color: $background1;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 2px 1px #cecece inset;
+        font-weight: bold;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        font-size: 24px;
+    }
+    .localisation>i{
+        padding-right: 5%;
+    }
+    
+    section{
+        background-color: $background2;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    section>h1{
+        margin: 0 auto;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+    section>p{
+        font-size: 26px;
+    }
+    
+    section>input{
+        background: linear-gradient($lightpurple, $darkpurple);
+        border-radius: 50px;
+        text-decoration: none;
+        padding: 13px;
+        color: #FFFFFF;
+        font-weight: bold;
+        border: none;
+        box-shadow: 0.5px 0.5px 2px #000;
+        transition: all 200ms;
+            &:hover{
+                background: linear-gradient($darkpurple, $lightpurple);
+            }
+    }
+    
+    aside{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+    
+    aside>h2{
+        padding-right: 42%;
+        font-weight: bold;
+    }
+    
+    .block_use{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 80%;
+        align-items: center;
+        box-shadow: 6px 4px 8px #e7e7e7;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        transition: all 300ms;
+            &:hover{
+                background-color: $background2;
+                transform: scale(1.1)
+            }
+    }
+    
+    aside i{
+        color: $darkpurple;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    .purple_number{
+        margin-left: -4%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: $darkpurple;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+    nav{
+        background-color: $background2;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 30px;
+        align-items: center;
+        padding-bottom: 60px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        box-shadow: 0px -2px 1px #cecece inset;
+    }
+    
+    nav>h2{
+        padding-right: 51%;
+        font-size: 36px;
+    }
+    
+    .block_restau{
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        justify-content: space-around;
+        background-color: white;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 3px #d4d4d4;
+    }
+    
+    .block_restau img{
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 25px 25px 0px 0px;
+    }
+    
+    .block_restau p{
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 8px;
+    }
+    
+    .text_restau{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 70px;
+        padding-top: 4px;
+        padding-left: 5%;
+        color: #000000;
+    }
+    
+    .restau_title{
+        font-weight: bold;
+    }
+    
+    .heart{
+        margin: 0 auto;
+        margin-top: 10px;
+        font-size: 24px;
+        color: #FFFFFF;
+        text-shadow: 0.2em 0.1em 0.6em $lightpurple;
+        transition: all 200ms;
+            &:active{
+                color: $darkpurple;
+            }
+    }
+    
+    .heart>i{
+        transform: scale(1);
+        transition: all 500ms;
+            &:hover{
+                transform: scale(1.2)
+            }
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #353535;
+        padding-bottom: 20px;
+        align-items: center;
+        padding-top: 2%;
+    }
+    
+    footer>img{
+        filter: invert(100%);
+        width: 20%;
+        padding-left: 3%;
+        padding-right: 5%;
+    }
+    
+    footer>a{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        color: #FFFFFF;
+        align-items: center;
+        font-weight: bold;
+        font-size: 12px;
+        width: 20%;
+        padding-left: 8%;
+        text-align: center;
+    }
+    
+    footer>a>i{
+        padding-right: 10%;
+    }
+}
