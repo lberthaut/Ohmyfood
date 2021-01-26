@@ -4,6 +4,7 @@ $darkpurple: #9356dc;
 $lightpurple: #FF79DA;
 $policetext: roboto, serif;
 $policelogo: shrikhand, serif;
+$greencolor: #99e2d0;
 
 @font-face{   
     font-family: 'roboto';
@@ -36,8 +37,6 @@ a{
 
 header{
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -47,14 +46,131 @@ header{
 @media screen and (max-width: 480px)
 {
     .bloc_page{
-        padding-top: 4%;
-        margin: 5%;
+        padding-top: 2%;
+        margin: 0 auto;
     }
 
     body{
         margin: 0 auto;
         font-family: $policetext;
     }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    .rewind{
+        margin-left: 7%;
+    }
+
+    .rewind>a>i{
+        font-size: 24px;
+        color: #000000;
+    }
+
+    header>figure>img{
+        margin-left: 18%;
+    }
+
+    .photo_restau{
+        width: 100%;
+    }
+
+    .photo_restau>img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+    article{
+        background-color: $background2;
+        width: 100%;
+        padding-top: 20px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    h1{
+        font-family: $policelogo;
+        font-size: 28px;
+    }
+
+    .heart>i{
+        font-size: 24px;
+        transition: all 300ms;
+        &:hover{
+            color: $darkpurple;
+        }
+    }
+
+    .little_title{
+        margin-left: 9%;
+        padding-bottom: 20px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .green_bar{
+        height: 3px;
+        width: 40px;
+        background-color: $greencolor;
+        margin-top: 1%;
+    }
+
+    .section_food{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .block_food{
+        width: 85%;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #FFFFFF;
+        padding-top: 5px;
+        border-radius: 25px;
+        box-shadow: 2px 2px 3px #d4d4d4;
+        margin-bottom: 20px;
+    }
+
+    .block_food>p{
+        margin: 1%;
+        padding-left: 3%;
+    }
+
+    .block_food>p:nth-child(1){
+        font-weight: bold;
+    }
+    
+    .block_food>p:nth-child(2){
+        width: 80%;
+    }
+
+    .block_food>p:nth-child(3){
+        width: 10%;
+        margin-top: 8%;
+        font-weight: bold;
+    }
+
 }
 
 
