@@ -1,0 +1,76 @@
+$background1: #eaeaea;
+$background2: #f6f6f6;
+$darkpurple: #9356dc;
+$lightpurple: #FF79DA;
+$policetext: roboto, serif;
+$policelogo: shrikhand, serif;
+
+@font-face{   
+    font-family: 'roboto';
+    src: url('../images/police/roboto/roboto-black.ttf');
+    src: url('../images/police/roboto/roboto-bold.ttf');
+    src: url('../images/police/roboto/roboto-light.ttf');
+    src: url('../images/police/roboto/roboto-medium.ttf');
+    src: url('../images/police/roboto/roboto-regular.ttf');
+    src: url('../images/police/roboto/roboto-thin.ttf');
+}
+
+@font-face{
+    font-family: 'shrikhand';
+    src: url('../images/police/shrikhand/shrikhand-regular.ttf');
+}
+
+.bloc_page{
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+body{
+    font-family: $policetext;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*Query Smartphone*/
+
+@media screen and (max-width: 480px)
+{
+    .bloc_page{
+        padding-top: 4%;
+        margin: 5%;
+    }
+
+    body{
+        margin: 0 auto;
+        font-family: $policetext;
+    }
+}
+
+
+
+
+/*Query tablets*/
+
+@media screen and (min-width: 481px) and (max-width: 999px)
+{
+    .bloc_page{
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    body{
+        font-family: $policetext;
+    }
+}

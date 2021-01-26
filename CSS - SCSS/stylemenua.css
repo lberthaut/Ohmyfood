@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'roboto';
+  src: url("../images/police/roboto/roboto-black.ttf");
+  src: url("../images/police/roboto/roboto-bold.ttf");
+  src: url("../images/police/roboto/roboto-light.ttf");
+  src: url("../images/police/roboto/roboto-medium.ttf");
+  src: url("../images/police/roboto/roboto-regular.ttf");
+  src: url("../images/police/roboto/roboto-thin.ttf");
+}
+
+@font-face {
+  font-family: 'shrikhand';
+  src: url("../images/police/shrikhand/shrikhand-regular.ttf");
+}
+
+/* line 23, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+.bloc_page {
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* line 29, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+body {
+  font-family: roboto, serif;
+}
+
+/* line 33, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+a {
+  text-decoration: none;
+}
+
+/* line 37, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Query Smartphone*/
+@media screen and (max-width: 480px) {
+  /* line 49, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  .bloc_page {
+    padding-top: 4%;
+    margin: 5%;
+  }
+  /* line 54, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  body {
+    margin: 0 auto;
+    font-family: roboto, serif;
+  }
+}
+
+/*Query tablets*/
+@media screen and (min-width: 481px) and (max-width: 999px) {
+  /* line 67, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  .bloc_page {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  /* line 73, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  body {
+    font-family: roboto, serif;
+  }
+}
+
+/*# sourceMappingURL=stylemenua.css.map */
