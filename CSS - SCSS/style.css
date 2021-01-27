@@ -222,12 +222,12 @@ nav > h2 {
   margin-top: 10px;
   font-size: 24px;
   color: #FFFFFF;
-  text-shadow: 0.2em 0.1em 0.6em #FF79DA;
+  filter: drop-shadow(0px 0px 4px black);
   transition: all 200ms;
 }
 
 /* line 204, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
-.heart:active {
+.heart:hover {
   color: #9356dc;
 }
 
@@ -440,7 +440,7 @@ footer > a > i {
     padding-left: 8%;
     font-size: 24px;
     color: #FFFFFF;
-    text-shadow: 0.2em 0.1em 0.6em #FF79DA;
+    filter: drop-shadow(0px 0px 4px black);
     transition: color 200ms;
   }
   /* line 414, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
@@ -669,7 +669,7 @@ footer > a > i {
     margin-top: 10px;
     font-size: 24px;
     color: #FFFFFF;
-    text-shadow: 0.2em 0.1em 0.6em #FF79DA;
+    filter: drop-shadow(0px 0px 4px black);
     transition: all 200ms;
   }
   /* line 642, ../P3/ohmyfood/CSS - SCSS/SCSS/style.SCSS */
