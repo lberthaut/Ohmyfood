@@ -171,6 +171,52 @@ header{
         font-weight: bold;
     }
 
+    article input{
+        background: linear-gradient($lightpurple, $darkpurple);
+        border-radius: 50px;
+        text-decoration: none;
+        padding: 13px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        color: #FFFFFF;
+        font-weight: bold;
+        border: none;
+        box-shadow: 0.5px 0.5px 2px #000;
+        transition: all 200ms;
+        &:active{
+            background: linear-gradient($darkpurple, $lightpurple);
+        }
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #353535;
+        padding-bottom: 20px;
+    }
+
+    footer>img{
+        filter: invert(100%);
+        width: 25%;
+        padding: 4%;
+
+    }
+
+    footer>a{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        color: #FFFFFF;
+        align-items: center;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.1;
+    }
+
+    footer>a>i{
+        padding: 0;
+    }
 }
 
 

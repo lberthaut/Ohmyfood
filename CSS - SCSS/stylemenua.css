@@ -164,17 +164,64 @@ header {
     margin-top: 8%;
     font-weight: bold;
   }
+  /* line 174, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  article input {
+    background: linear-gradient(#FF79DA, #9356dc);
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 13px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0.5px 0.5px 2px #000;
+    transition: all 200ms;
+  }
+  /* line 186, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  article input:active {
+    background: linear-gradient(#9356dc, #FF79DA);
+  }
+  /* line 191, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #353535;
+    padding-bottom: 20px;
+  }
+  /* line 199, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  footer > img {
+    filter: invert(100%);
+    width: 25%;
+    padding: 4%;
+  }
+  /* line 206, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  footer > a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #FFFFFF;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+  /* line 217, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  footer > a > i {
+    padding: 0;
+  }
 }
 
 /*Query tablets*/
 @media screen and (min-width: 481px) and (max-width: 999px) {
-  /* line 183, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  /* line 229, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
   .bloc_page {
     margin-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
   }
-  /* line 189, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
+  /* line 235, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenua.SCSS */
   body {
     font-family: roboto, serif;
   }
