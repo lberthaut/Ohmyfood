@@ -27,6 +27,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #000000;
 }
 
 header{
@@ -85,6 +86,7 @@ section>input{
     border: none;
     box-shadow: 0.5px 0.5px 2px #000;
     transition: all 200ms;
+    outline: none;
         &:hover{
             background: linear-gradient($darkpurple, $lightpurple);
         }
@@ -113,13 +115,13 @@ aside>h2{
     box-shadow: 6px 4px 8px $background1;
     border-radius: 15px;
     margin-bottom: 40px;
-    transition: all 300ms;
+    transition: all 300ms ease-out;
     background-color: $background2;
         &:hover{
             background-color: #eee5fa;
             transform: scale(1.1);
-            & + aside div i{
-                color: $darkpurple;
+            &+aside div i{
+            color: $darkpurple;
             }
         }
 }
@@ -128,7 +130,7 @@ aside div i{
     color: #454142;
     padding-left: 6%;
     padding-right: 6%;
-    transition: all 300ms;
+    transition: color 300ms;
 }
 
 .purple_number{
@@ -249,6 +251,10 @@ footer>a>i{
     padding-right: 12%;
 }
 
+.fa.fa-handshake-o{
+    transform: rotate(-45deg);
+}
+
 
 
 /*Query Smartphone*/
@@ -267,6 +273,7 @@ footer>a>i{
 
     a{
         text-decoration: none;
+        color: #000000;
     }
 
     header{
@@ -377,7 +384,7 @@ footer>a>i{
     }
 
     nav>h2{
-        padding-right: 55%;
+        padding-right: 50%;
         font-size: 30px;
     }
 
@@ -418,7 +425,7 @@ footer>a>i{
         font-size: 24px;
         color: #FFFFFF;
         margin-top:4%;
-        margin-left: 20%;
+        margin-left: 30%;
         filter: drop-shadow(0px 0px 4px black);
         transition: color 200ms;
             &:active{
@@ -432,6 +439,7 @@ footer>a>i{
         flex-wrap: wrap;
         background-color: #353535;
         padding-bottom: 20px;
+        align-items: initial;
     }
 
     footer>img{
@@ -449,11 +457,21 @@ footer>a>i{
         align-items: center;
         font-weight: bold;
         font-size: 12px;
-        line-height: 1.1;
+        line-height: 0.2;
+        padding-left: 4%;
     }
 
     footer>a>i{
         padding: 0;
+    }
+
+    .fa.fa-cutlery{
+        margin-right: 3%;
+    }
+
+    .fa.fa-handshake-o{
+        transform: rotate(-45deg);
+        margin-right: 2%;
     }
 }
 
@@ -475,6 +493,7 @@ footer>a>i{
     
     a{
         text-decoration: none;
+        color: #000000;
     }
     
     header{
@@ -694,5 +713,9 @@ footer>a>i{
     
     footer>a>i{
         padding-right: 10%;
+    }
+
+    .fa.fa-handshake-o{
+        transform: rotate(-45deg);
     }
 }
