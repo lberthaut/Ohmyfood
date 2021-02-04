@@ -89,6 +89,7 @@ section>input{
     outline: none;
         &:hover{
             background: linear-gradient($darkpurple, $lightpurple);
+            opacity: 0.8;
         }
 }
 
@@ -120,17 +121,17 @@ aside>h2{
         &:hover{
             background-color: #eee5fa;
             transform: scale(1.1);
-            &+aside div i{
-            color: $darkpurple;
-            }
+            .fa.fa-mobile, .fa.fa-list-ul, .fas.fa-store.main-operation__icons{
+                    color: $darkpurple;
+                }
         }
 }
 
-aside div i{
+.fa.fa-mobile, .fa.fa-list-ul, .fas.fa-store.main-operation__icons{
     color: #454142;
     padding-left: 6%;
     padding-right: 6%;
-    transition: color 300ms;
+    transition: color;
 }
 
 .purple_number{
@@ -328,6 +329,7 @@ footer>a>i{
         transition: all 200ms;
         &:active{
             background: linear-gradient($darkpurple, $lightpurple);
+            opacity: 0.8;
         }
     }
 
@@ -554,6 +556,7 @@ footer>a>i{
         transition: all 200ms;
             &:hover{
                 background: linear-gradient($darkpurple, $lightpurple);
+                opacity: 0.9;
             }
     }
     

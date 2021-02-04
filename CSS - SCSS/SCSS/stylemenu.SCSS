@@ -147,6 +147,18 @@ h2{
     border-radius: 25px;
     box-shadow: 2px 2px 3px #d4d4d4;
     margin-bottom: 20px;
+    animation: translate_bar 800ms ease-out;
+}
+
+@keyframes translate_bar{
+    0%{
+        opacity: 0;
+        transform: translate(0, 50px)
+    }
+    100%{
+        opacity: 1;
+        transform: translate (0, 0)
+    }
 }
 
 .plats{
@@ -194,6 +206,7 @@ article input{
     padding-right: 40px;
     &:hover{
         background: linear-gradient($darkpurple, $lightpurple);
+        opacity: 0.9;
     }
 }
 
@@ -405,6 +418,7 @@ footer>a>i{
         padding-right: 40px;
         &:active{
             background: linear-gradient($darkpurple, $lightpurple);
+            opacity: 0.9;
         }
     }
 
@@ -622,6 +636,7 @@ footer>a>i{
         padding-right: 40px;
         &:hover{
             background: linear-gradient($darkpurple, $lightpurple);
+            opacity: 0.9;
         }
     }
     
