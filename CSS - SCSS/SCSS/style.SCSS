@@ -19,10 +19,98 @@ $policelogo: shrikhand, serif;
     margin-top: 2%;
     margin-left: 20%;
     margin-right: 20%;
+    z-index: 1;
+}
+
+.loading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    background: none;
+    z-index: 2;
+}
+
+.ball1{
+    width: 35px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: black;
+    animation: slideball 1400ms both ease-in-out;
+    animation-iteration-count: 3;
+    margin-top: 50vh;
+    margin-left: 45vw;
+}
+
+.ball2{
+    width: 35px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: black;
+    margin-left: 2%;
+    animation: slideball 1400ms 1400ms both ease-out;
+    animation-iteration-count: 3;
+    margin-top: 50vh;
+}
+
+.ball3{
+    width: 35px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: black;
+    margin-left: 2%;
+    animation: slideball 1400ms 2800ms both ease-out;
+    animation-iteration-count: 3;
+    margin-top: 50vh;
+}
+
+@keyframes slideball{
+    0%{
+        transform: scale(0);
+        background-color: #FF79DA;
+    }
+    10%{
+        transform: scale(0.2);
+    }
+    20%{
+        transform: scale(0.4);
+    }
+    30%{
+        transform: scale(0.6);
+        background-color: #9356DC;
+    }
+    40%{
+        transform: scale(0.5);
+        background-color: #FF79DA;
+    }
+    50%{
+        transform: scale(1);
+        background-color: #9356DC;
+    }
+    60%{
+        transform: scale(0.8);
+    }
+    70%{
+        transform: scale(0.6);
+        background-color: #9356DC;
+    }
+    80%{
+        transform: scale(0.4);
+        background-color: #bd58e2;
+    }
+    90%{
+        transform: scale(0.2);
+    }
+    100%{
+        transform: scale(0);
+        background-color: #FF79DA;
+    }
+
 }
 
 body{
     font-family: $policetext;
+    position: absolute;
 }
 
 a{
