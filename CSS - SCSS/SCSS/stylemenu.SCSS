@@ -147,7 +147,17 @@ h2{
     border-radius: 25px;
     box-shadow: 2px 2px 3px #d4d4d4;
     margin-bottom: 20px;
+    padding: 0;
     animation: translate_bar 800ms ease-out;
+        &:hover{
+            .greencheck{
+                transform: translate(0, 0);
+                display: initial;
+            }
+            .fas.fa-check-circle{
+                transform: rotate(1turn);
+            }
+        }
 }
 
 @keyframes translate_bar{
@@ -186,7 +196,28 @@ h2{
 .block_food>p{
     margin-top: 4%;
     font-weight: bold;
-    margin-left: 9%;
+    padding-left: 9%;
+}
+
+.greencheck{
+    height: 100%;
+    width: 60px;
+    background-color: #99e2d0;
+    border-radius: 0px 25px 25px 0px;
+    margin-left: 15px;
+    display: none;
+    transform: translate(60px, 0);
+    transition: all 400ms;
+}
+
+.fas.fa-check-circle{
+    color: #FFFFFF;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+    transform: rotate(O) 400ms;
+    transition: all 400ms;
 }
 
 article input{
@@ -367,7 +398,6 @@ footer>a>i{
         flex-direction: row;
         flex-wrap: nowrap;
         background-color: #FFFFFF;
-        padding-top: 5px;
         border-radius: 25px;
         box-shadow: 2px 2px 3px #d4d4d4;
         margin-bottom: 20px;
