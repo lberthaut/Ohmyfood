@@ -145,17 +145,17 @@ h2{
     flex-wrap: nowrap;
     background-color: #FFFFFF;
     border-radius: 25px;
+    cursor: pointer;
     box-shadow: 2px 2px 3px #d4d4d4;
     margin-bottom: 20px;
     padding: 0;
     animation: translate_bar 800ms ease-out;
         &:hover{
             .greencheck{
-                transform: translate(0, 0);
-                display: initial;
+                width: 60px;
             }
             .fas.fa-check-circle{
-                transform: rotate(1turn);
+                transform: rotate(-1turn);
             }
         }
 }
@@ -201,13 +201,11 @@ h2{
 
 .greencheck{
     height: 100%;
-    width: 60px;
+    width: 0px;
     background-color: #99e2d0;
     border-radius: 0px 25px 25px 0px;
     margin-left: 15px;
-    display: none;
-    transform: translate(60px, 0);
-    transition: translate 400ms;
+    transition: all 500ms;
 }
 
 .fas.fa-check-circle{
@@ -216,8 +214,8 @@ h2{
     display: flex;
     justify-content: center;
     margin-top: 17px;
-    transform: rotate(O);
-    transition: rotate 400ms;
+    transform: rotate(90deg);
+    transition: all 500ms;
 }
 
 article input{
