@@ -229,7 +229,7 @@ h2 {
   margin-left: 15px;
   display: none;
   transform: translate(60px, 0);
-  transition: all 400ms;
+  transition: translate 400ms;
 }
 
 /* line 213, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenu.SCSS */
@@ -239,8 +239,8 @@ h2 {
   display: flex;
   justify-content: center;
   margin-top: 17px;
-  transform: rotate(O) 400ms;
-  transition: all 400ms;
+  transform: rotate(O);
+  transition: rotate 400ms;
 }
 
 /* line 223, ../P3/ohmyfood/CSS - SCSS/SCSS/stylemenu.SCSS */
