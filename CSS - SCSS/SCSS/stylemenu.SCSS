@@ -130,7 +130,7 @@ h2{
     margin-top: 1%;
 }
 
-.section_food{
+.section_entree, .section_plats, .section_desserts{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -149,7 +149,6 @@ h2{
     box-shadow: 2px 2px 3px #d4d4d4;
     margin-bottom: 20px;
     padding: 0;
-    animation: translate_bar 800ms ease-out;
         &:hover{
             .greencheck{
                 width: 60px;
@@ -158,6 +157,18 @@ h2{
                 transform: rotate(-1turn);
             }
         }
+}
+
+.section_entree .block_food{
+    animation: translate_bar 800ms ease-out;
+}
+
+.section_plats .block_food{
+    animation: translate_bar 800ms 200ms ease-out;
+}
+
+.section_desserts .block_food{
+    animation: translate_bar 800ms 400ms ease-out;
 }
 
 @keyframes translate_bar{
