@@ -26,13 +26,13 @@
   width: 100%;
   height: 100%;
   background-color: #332f32;
-  opacity: 0.9;
-  animation: backload 7400ms forwards linear;
+  opacity: 1;
+  animation: backload 7400ms forwards ease-in;
 }
 
 @keyframes backload {
   from {
-    opacity: 0.9;
+    opacity: 1;
   }
   to {
     opacity: 0;
