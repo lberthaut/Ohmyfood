@@ -151,24 +151,25 @@ h2{
     padding: 0;
         &:hover{
             .greencheck{
-                width: 60px;
+                width: 80px;
             }
             .fas.fa-check-circle{
                 transform: rotate(-1turn);
+                visibility: initial;
             }
         }
 }
 
 .section_entree .block_food{
-    animation: translate_bar 800ms ease-out;
+    animation: translate_bar 800ms backwards ease-out;
 }
 
 .section_plats .block_food{
-    animation: translate_bar 800ms 200ms ease-out;
+    animation: translate_bar 800ms 200ms backwards ease-out;
 }
 
 .section_desserts .block_food{
-    animation: translate_bar 800ms 400ms ease-out;
+    animation: translate_bar 800ms 400ms backwards ease-out;
 }
 
 @keyframes translate_bar{
@@ -217,6 +218,7 @@ h2{
     border-radius: 0px 25px 25px 0px;
     margin-left: 15px;
     transition: all 500ms;
+    transform-origin: right;
 }
 
 .fas.fa-check-circle{
@@ -227,6 +229,7 @@ h2{
     margin-top: 17px;
     transform: rotate(90deg);
     transition: all 500ms;
+    visibility: hidden;
 }
 
 article input{
@@ -246,7 +249,7 @@ article input{
     padding-right: 40px;
     &:hover{
         background: linear-gradient($darkpurple, $lightpurple);
-        opacity: 0.9;
+        opacity: 0.8;
     }
 }
 
@@ -415,7 +418,7 @@ footer>a>i{
     .plats{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        max-width: 60%;
         margin-left: 3%;
     }
 
@@ -436,7 +439,7 @@ footer>a>i{
 
     .block_food>p{
         margin-top: 9%;
-        margin-left: 4%;
+        margin-left: 8%;
         font-weight: bold;
     }
 
@@ -582,7 +585,8 @@ footer>a>i{
     }
     
     .heart{
-        margin-left: 50%;
+        margin-left: 40%;
+        margin-right: 5%;
     }
     
     .heart>i{
@@ -624,7 +628,6 @@ footer>a>i{
         flex-direction: row;
         flex-wrap: nowrap;
         background-color: #FFFFFF;
-        padding-top: 5px;
         border-radius: 25px;
         box-shadow: 2px 2px 3px #d4d4d4;
         margin-bottom: 20px;
