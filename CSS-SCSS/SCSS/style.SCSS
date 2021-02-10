@@ -65,6 +65,7 @@ $policelogo: shrikhand, serif;
     animation: slideball 1400ms 1400ms both ease-out;
     animation-iteration-count: 3;
     margin-top: 50vh;
+    position: fixed;
 }
 
 .ball3{
@@ -76,6 +77,7 @@ $policelogo: shrikhand, serif;
     animation: slideball 1400ms 2800ms both ease-out;
     animation-iteration-count: 3;
     margin-top: 50vh;
+    position: fixed;
 }
 
 @keyframes slideball{
