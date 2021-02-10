@@ -179,7 +179,6 @@ h2{
     }
     100%{
         opacity: 1;
-        transform: translate (0, 0)
     }
 }
 
@@ -246,6 +245,7 @@ article input{
     outline: none;
     padding-left: 40px;
     padding-right: 40px;
+    cursor: pointer;
     &:hover{
         background: linear-gradient($darkpurple, $lightpurple);
         opacity: 0.8;

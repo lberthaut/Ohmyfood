@@ -199,11 +199,10 @@ h2 {
   }
   100% {
     opacity: 1;
-    transform: translate 0, 0;
   }
 }
 
-/* line 186, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 185, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .plats {
   display: flex;
   flex-direction: column;
@@ -212,7 +211,7 @@ h2 {
   padding-top: 4px;
 }
 
-/* line 194, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 193, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .plats > p {
   margin: 0;
   padding-left: 3%;
@@ -222,19 +221,19 @@ h2 {
   white-space: nowrap;
 }
 
-/* line 203, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 202, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .plats > p:nth-child(1) {
   font-weight: bold;
 }
 
-/* line 207, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 206, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .block_food > p {
   margin-top: 4%;
   font-weight: bold;
   padding-left: 9%;
 }
 
-/* line 213, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 212, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .greencheck {
   height: 100%;
   width: 0px;
@@ -245,7 +244,7 @@ h2 {
   transform-origin: right;
 }
 
-/* line 223, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 222, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .fas.fa-check-circle {
   color: #FFFFFF;
   font-size: 28px;
@@ -257,7 +256,7 @@ h2 {
   visibility: hidden;
 }
 
-/* line 234, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 233, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 article input {
   background: linear-gradient(#FF79DA, #9356dc);
   border-radius: 50px;
@@ -273,6 +272,7 @@ article input {
   outline: none;
   padding-left: 40px;
   padding-right: 40px;
+  cursor: pointer;
 }
 
 /* line 249, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
