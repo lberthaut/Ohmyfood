@@ -151,7 +151,7 @@ h2{
     padding: 0;
         &:hover{
             .greencheck{
-                width: 80px;
+                width: 100px;
             }
             .fas.fa-check-circle{
                 transform: rotate(-1turn);
@@ -195,7 +195,6 @@ h2{
     margin: 0;
     padding-left: 3%;
     line-height: 1.5;
-    max-width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
