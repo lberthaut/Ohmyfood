@@ -178,16 +178,27 @@ h2 {
 }
 
 /* line 163, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+.greencheck {
+  height: 100%;
+  width: 0px;
+  background-color: #99e2d0;
+  border-radius: 0px 25px 25px 0px;
+  margin-left: 15px;
+  transition: all 500ms;
+  transform-origin: right;
+}
+
+/* line 174, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .section_entree .block_food {
   animation: translate_bar 800ms backwards ease-out;
 }
 
-/* line 167, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 178, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .section_plats .block_food {
   animation: translate_bar 800ms 200ms backwards ease-out;
 }
 
-/* line 171, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 182, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .section_desserts .block_food {
   animation: translate_bar 800ms 400ms backwards ease-out;
 }
@@ -202,7 +213,7 @@ h2 {
   }
 }
 
-/* line 185, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 196, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .plats {
   display: flex;
   flex-direction: column;
@@ -211,7 +222,7 @@ h2 {
   padding-top: 4px;
 }
 
-/* line 193, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 204, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .plats > p {
   margin: 0;
   padding-left: 3%;
@@ -221,30 +232,19 @@ h2 {
   white-space: nowrap;
 }
 
-/* line 202, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 213, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .plats > p:nth-child(1) {
   font-weight: bold;
 }
 
-/* line 206, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 217, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .block_food > p {
   margin-top: 4%;
   font-weight: bold;
   padding-left: 9%;
 }
 
-/* line 212, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
-.greencheck {
-  height: 100%;
-  width: 0px;
-  background-color: #99e2d0;
-  border-radius: 0px 25px 25px 0px;
-  margin-left: 15px;
-  transition: all 500ms;
-  transform-origin: right;
-}
-
-/* line 222, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 223, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .fas.fa-check-circle {
   color: #FFFFFF;
   font-size: 28px;
@@ -256,7 +256,7 @@ h2 {
   visibility: hidden;
 }
 
-/* line 233, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 234, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 article input {
   background: linear-gradient(#FF79DA, #9356dc);
   border-radius: 50px;
@@ -275,13 +275,13 @@ article input {
   cursor: pointer;
 }
 
-/* line 249, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 250, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 article input:hover {
   background: linear-gradient(#9356dc, #FF79DA);
   opacity: 0.8;
 }
 
-/* line 255, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 256, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 footer {
   display: flex;
   flex-direction: row;
@@ -292,13 +292,13 @@ footer {
   padding-top: 2%;
 }
 
-/* line 265, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 266, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 footer > img {
   filter: invert(100%);
   width: 20%;
 }
 
-/* line 270, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 271, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 footer > a {
   display: flex;
   flex-direction: row;
@@ -309,29 +309,29 @@ footer > a {
   font-size: 12px;
 }
 
-/* line 280, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 281, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 footer > a > i {
   padding-right: 12%;
 }
 
-/* line 284, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+/* line 285, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
 .fa.fa-handshake-o {
   transform: rotate(-45deg);
 }
 
 /*Query Smartphone*/
 @media screen and (max-width: 480px) {
-  /* line 296, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 297, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .bloc_page {
     padding-top: 2%;
     margin: 0 auto;
   }
-  /* line 301, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 302, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   body {
     margin: 0 auto;
     font-family: roboto, serif;
   }
-  /* line 306, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 307, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   header {
     display: flex;
     flex-direction: row;
@@ -339,39 +339,39 @@ footer > a > i {
     align-items: center;
     width: 100%;
   }
-  /* line 314, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 315, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .rewind {
     margin-left: 7%;
     display: initial;
   }
-  /* line 319, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 320, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .rewind > a > i {
     font-size: 20px;
     color: #000000;
   }
-  /* line 324, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 325, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   header > figure > img {
     margin-left: 8%;
   }
-  /* line 328, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 329, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .on_block {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     position: relative;
   }
-  /* line 335, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 336, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .photo_restau {
     width: 100%;
     position: absolute;
     z-index: 1;
   }
-  /* line 341, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 342, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .photo_restau > img {
     object-fit: cover;
     width: 100%;
   }
-  /* line 346, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 347, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   article {
     background-color: #f6f6f6;
     width: 100%;
@@ -383,19 +383,19 @@ footer > a > i {
     flex-direction: column;
     z-index: 1;
   }
-  /* line 358, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 359, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .title {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
   }
-  /* line 365, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 366, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   h1 {
     font-family: shrikhand, serif;
     font-size: 28px;
   }
-  /* line 370, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 371, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .heart {
     margin-left: 20%;
     font-size: 24px;
@@ -403,35 +403,35 @@ footer > a > i {
     filter: drop-shadow(0px 0px 4px black);
     transition: color 200ms;
   }
-  /* line 376, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 377, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .heart:active {
     color: #9356dc;
   }
-  /* line 381, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 382, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .little_title {
     margin-left: 9%;
     padding-bottom: 20px;
   }
-  /* line 386, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 387, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   h2 {
     font-size: 20px;
     margin: 0;
   }
-  /* line 391, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 392, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .green_bar {
     height: 3px;
     width: 40px;
     background-color: #99e2d0;
     margin-top: 1%;
   }
-  /* line 398, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 399, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .section_food {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
   }
-  /* line 405, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 406, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .block_food {
     width: 85%;
     height: 60px;
@@ -443,14 +443,14 @@ footer > a > i {
     box-shadow: 2px 2px 3px #d4d4d4;
     margin-bottom: 20px;
   }
-  /* line 417, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 418, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .plats {
     display: flex;
     flex-direction: column;
     max-width: 60%;
     margin-left: 3%;
   }
-  /* line 424, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 425, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .plats > p {
     margin: 0;
     padding-left: 3%;
@@ -461,17 +461,17 @@ footer > a > i {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* line 435, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 436, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .plats > p:nth-child(1) {
     font-weight: bold;
   }
-  /* line 439, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 440, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .block_food > p {
     margin-top: 9%;
     margin-left: 8%;
     font-weight: bold;
   }
-  /* line 445, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 446, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   article input {
     background: linear-gradient(#FF79DA, #9356dc);
     border-radius: 50px;
@@ -488,12 +488,12 @@ footer > a > i {
     padding-left: 40px;
     padding-right: 40px;
   }
-  /* line 460, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 461, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   article input:active {
     background: linear-gradient(#9356dc, #FF79DA);
     opacity: 0.9;
   }
-  /* line 466, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 467, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   footer {
     display: flex;
     flex-direction: column;
@@ -502,13 +502,13 @@ footer > a > i {
     padding-bottom: 20px;
     align-items: initial;
   }
-  /* line 475, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 476, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   footer > img {
     filter: invert(100%);
     width: 25%;
     padding: 4%;
   }
-  /* line 481, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 482, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   footer > a {
     display: flex;
     flex-direction: row;
@@ -519,15 +519,15 @@ footer > a > i {
     line-height: 1.2;
     padding-left: 4%;
   }
-  /* line 492, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 493, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   footer > a > i {
     padding: 0;
   }
-  /* line 496, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 497, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .fa.fa-cutlery {
     margin-right: 3%;
   }
-  /* line 500, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 501, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .fa.fa-handshake-o {
     transform: rotate(-45deg);
     margin-right: 2%;
@@ -536,55 +536,55 @@ footer > a > i {
 
 /*Query tablets*/
 @media screen and (min-width: 481px) and (max-width: 999px) {
-  /* line 513, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 514, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .bloc_page {
     margin-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
   }
-  /* line 519, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 520, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   body {
     font-family: roboto, serif;
   }
-  /* line 523, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 524, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   a {
     text-decoration: none;
     color: #000000;
   }
-  /* line 528, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 529, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   header {
     width: 100%;
   }
-  /* line 532, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 533, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .rewind {
     display: none;
   }
-  /* line 536, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 537, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   header > figure {
     text-align: center;
     font-size: 34px;
   }
-  /* line 541, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 542, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .on_block {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     position: relative;
   }
-  /* line 548, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 549, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .photo_restau {
     width: 100%;
     position: absolute;
     z-index: 1;
   }
-  /* line 554, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 555, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .photo_restau > img {
     object-fit: cover;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
-  /* line 561, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 562, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   article {
     box-shadow: 0px 2px 1px #cecece inset;
     background-color: #f6f6f6;
@@ -597,57 +597,57 @@ footer > a > i {
     flex-direction: column;
     z-index: 1;
   }
-  /* line 574, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 575, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .title {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 9%;
   }
-  /* line 581, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 582, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   h1 {
     font-family: shrikhand, serif;
     font-size: 28px;
   }
-  /* line 586, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 587, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .heart {
     margin-left: 40%;
     margin-right: 5%;
   }
-  /* line 591, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 592, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .heart > i {
     font-size: 24px;
     transition: all 300ms;
   }
-  /* line 594, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 595, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .heart > i:hover {
     color: #9356dc;
   }
-  /* line 599, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 600, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .little_title {
     margin-left: 9%;
     padding-bottom: 20px;
   }
-  /* line 604, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 605, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   h2 {
     font-size: 20px;
     margin: 0;
   }
-  /* line 609, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 610, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .green_bar {
     height: 3px;
     width: 40px;
     background-color: #99e2d0;
     margin-top: 1%;
   }
-  /* line 616, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 617, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .section_food {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
   }
-  /* line 623, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 624, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .block_food {
     width: 85%;
     height: 60px;
@@ -659,14 +659,14 @@ footer > a > i {
     box-shadow: 2px 2px 3px #d4d4d4;
     margin-bottom: 20px;
   }
-  /* line 635, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 636, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .plats {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin-left: 3%;
   }
-  /* line 642, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 643, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .plats > p {
     margin: 0;
     padding-left: 3%;
@@ -677,17 +677,17 @@ footer > a > i {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* line 653, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 654, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .plats > p:nth-child(1) {
     font-weight: bold;
   }
-  /* line 657, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 658, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .block_food > p {
     margin-top: 4%;
     font-weight: bold;
     margin-left: 9%;
   }
-  /* line 663, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 664, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   article input {
     background: linear-gradient(#FF79DA, #9356dc);
     border-radius: 50px;
@@ -704,12 +704,12 @@ footer > a > i {
     padding-left: 40px;
     padding-right: 40px;
   }
-  /* line 678, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 679, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   article input:hover {
     background: linear-gradient(#9356dc, #FF79DA);
     opacity: 0.9;
   }
-  /* line 684, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 685, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   footer {
     display: flex;
     flex-direction: row;
@@ -719,12 +719,12 @@ footer > a > i {
     align-items: center;
     padding-top: 2%;
   }
-  /* line 694, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 695, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   footer > img {
     filter: invert(100%);
     width: 20%;
   }
-  /* line 699, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 700, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   footer > a {
     display: flex;
     flex-direction: row;
@@ -734,11 +734,11 @@ footer > a > i {
     font-weight: bold;
     font-size: 12px;
   }
-  /* line 709, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 710, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   footer > a > i {
     padding-right: 12%;
   }
-  /* line 713, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  /* line 714, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
   .fa.fa-handshake-o {
     transform: rotate(-45deg);
   }
