@@ -2,13 +2,127 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Titre de la page</title>
+  <title>Oh My Food !</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS-SCSS/style.css">
+  <script src="https://kit.fontawesome.com/959f234b81.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  ...
-  <!-- Le reste du contenu -->
-  ...
+    <div class="loading">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+    </div>
+    <div class="bloc_page">
+        <header>
+            <figure>
+                <img src="images/logo/ohmyfoodlogo.svg" alt="logo">
+            </figure>
+            <div class="localisation">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>Paris, Belleville</p>
+            </div>
+        </header>
+        <section>
+            <h1>Réservez le menu qui<br> vous convient</h1>
+            <p>Découvrez des restaurants d'exception,<br> 
+                séléctionnés par nos soins.</p>
+                    <input type="button" value="Explorer nos restaurants"/>
+        </section>
+        <aside>
+            <h2>Fonctionnement</h2>
+            <div class="block_use">
+                <p class="purple_number">1</p>
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <p>Choisissez un restaurant</p>
+            </div>
+            <div class="block_use">
+                <p class="purple_number">2</p>
+                <i class="fa fa-list-ul" aria-hidden="true"></i>
+                <p>Composez votre menu</p>
+            </div>
+            <div class="block_use">
+                <p class="purple_number">3</p>
+                <i class="fas fa-store main-operation__icons"></i>
+                <p>Dégustez au restaurant</p>
+            </div>
+        </aside>
+        <nav>
+            <h2>Restaurants</h2>
+            <div class="block_restau">
+                <a href="menua.html">
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
+                </a>
+                <div class="text_restau">
+                    <a href="menua.html">
+                        <p class="restau_title">La palette du goût</p>
+                        <p>Ménilmontant</p>
+                    </a>
+                    <div class="heart">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="block_restau">
+                <a href="menub.html">
+                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
+                </a>
+                <div class="text_restau">
+                    <a href="menub.html">
+                        <p class="restau_title">La note enchantée</p>
+                        <p>Charonne</p>
+                    </a>
+                    <div class="heart">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="block_restau">
+                <a href="menuc.html">
+                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"/>
+                </a>
+                <div class="text_restau">
+                    <a href="menuc.html">
+                        <p class="restau_title">À la française</p>
+                        <p>Cité Rouge</p>
+                    </a>
+                    <div class="heart">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="block_restau">
+                <a href="menud.html">
+                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
+                </a>
+                <div class="text_restau">
+                    <a href="menud.html">
+                        <p class="restau_title">Le délice des sens</p>
+                        <p>Folie-Méricourt</p>
+                    </a>
+                    <div class="heart">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div><!--div bloc page-->
+    <footer>
+        <img src="images/logo/ohmyfoodlogo.svg" alt="logo"/>
+        <a href="#">
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+            <p>Proposer un restaurant</p>
+        </a>
+        <a href="#">
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <p>Devenir partenaire</p>
+        </a>
+        <a href="#">
+            <p>Mentions légales</p>
+        </a>
+        <a href="mailto:#">
+            <p>Contact</p>
+        </a>
+    </footer>
 </body>
 </html>
