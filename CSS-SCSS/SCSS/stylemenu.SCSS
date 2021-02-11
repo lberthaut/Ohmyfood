@@ -253,6 +253,7 @@ article input{
     &:hover{
         background: linear-gradient($darkpurple, $lightpurple);
         opacity: 0.8;
+        box-shadow: 9px 9px 33px -12px rgba(0,0,0,0.75);
     }
 }
 
@@ -444,7 +445,6 @@ footer>a>i{
         padding-left: 3%;
         line-height: 1.5;
         padding-top: 1%;
-        max-width: 80%;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
