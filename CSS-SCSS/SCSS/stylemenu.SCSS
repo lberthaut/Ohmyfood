@@ -253,7 +253,7 @@ article input{
     &:hover{
         background: linear-gradient($darkpurple, $lightpurple);
         opacity: 0.8;
-        box-shadow: 9px 9px 33px -12px rgba(0,0,0,0.75);
+        box-shadow: 9px 9px 33px -16px rgba(0,0,0,0.75);
     }
 }
 
@@ -647,6 +647,18 @@ footer>a>i{
         border-radius: 25px;
         box-shadow: 2px 2px 3px #d4d4d4;
         margin-bottom: 20px;
+        &:active{
+            .greencheck{
+                width: 80px;
+            }
+            .fas.fa-check-circle{
+                transform: rotate(-1turn);
+                visibility: initial;
+            }
+            .plats{
+                margin-right: 0;
+            }
+        }
     }
     
     .plats{

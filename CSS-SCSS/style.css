@@ -204,7 +204,7 @@ section > input {
 section > input:hover {
   background: linear-gradient(#9356dc, #FF79DA);
   opacity: 0.8;
-  box-shadow: 9px 9px 33px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 9px 33px -16px rgba(0, 0, 0, 0.75);
 }
 
 /* line 200, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
