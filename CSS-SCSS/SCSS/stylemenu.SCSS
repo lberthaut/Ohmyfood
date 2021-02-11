@@ -372,7 +372,8 @@ footer>a>i{
     }
 
     .heart{
-        margin-left: 20%;
+        margin-left: 25%;
+        margin-right: 5%;
         font-size: 24px;
         color: $background2;
         filter: drop-shadow(0px 0px 4px black);
@@ -416,6 +417,18 @@ footer>a>i{
         border-radius: 25px;
         box-shadow: 2px 2px 3px #d4d4d4;
         margin-bottom: 20px;
+        &:active{
+            .greencheck{
+                width: 80px;
+            }
+            .fas.fa-check-circle{
+                transform: rotate(-1turn);
+                visibility: initial;
+            }
+            .plats{
+                margin-right: 0;
+            }
+        }
     }
 
     .plats{
