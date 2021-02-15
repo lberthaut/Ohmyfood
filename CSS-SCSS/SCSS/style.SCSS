@@ -32,7 +32,18 @@ $policelogo: shrikhand, serif;
     height: 100%;
     background-color: #332f32;
     opacity: 1;
-    animation: backload 7400ms forwards ease-in;
+    -webkit-animation: backload 7400ms forwards ease-in;
+            animation: backload 7400ms forwards ease-in;
+}
+
+@-webkit-keyframes backload{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        z-index: -1;
+    }
 }
 
 @keyframes backload{
@@ -50,8 +61,10 @@ $policelogo: shrikhand, serif;
     height: 30px;
     border-radius: 25px;
     background-color: black;
-    animation: slideball 1400ms both ease-in-out;
-    animation-iteration-count: 3;
+    -webkit-animation: slideball 1400ms both ease-in-out;
+            animation: slideball 1400ms both ease-in-out;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
     margin-top: 50vh;
 }
 
@@ -61,8 +74,10 @@ $policelogo: shrikhand, serif;
     border-radius: 25px;
     background-color: black;
     margin-left: 2%;
-    animation: slideball 1400ms 1400ms both ease-out;
-    animation-iteration-count: 3;
+    -webkit-animation: slideball 1400ms 1400ms both ease-out;
+            animation: slideball 1400ms 1400ms both ease-out;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
     margin-top: 50vh;
 }
 
@@ -72,9 +87,55 @@ $policelogo: shrikhand, serif;
     border-radius: 25px;
     background-color: black;
     margin-left: 2%;
-    animation: slideball 1400ms 2800ms both ease-out;
-    animation-iteration-count: 3;
+    -webkit-animation: slideball 1400ms 2800ms both ease-out;
+            animation: slideball 1400ms 2800ms both ease-out;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
     margin-top: 50vh;
+}
+
+@-webkit-keyframes slideball{
+    0%{
+        transform: scale(0);
+        background-color: #FF79DA;
+    }
+    10%{
+        transform: scale(0.2);
+    }
+    20%{
+        transform: scale(0.4);
+    }
+    30%{
+        transform: scale(0.6);
+        background-color: #9356DC;
+    }
+    40%{
+        transform: scale(0.5);
+        background-color: #FF79DA;
+    }
+    50%{
+        transform: scale(1);
+        background-color: #9356DC;
+    }
+    60%{
+        transform: scale(0.8);
+    }
+    70%{
+        transform: scale(0.6);
+        background-color: #9356DC;
+    }
+    80%{
+        transform: scale(0.4);
+        background-color: #bd58e2;
+    }
+    90%{
+        transform: scale(0.2);
+    }
+    100%{
+        transform: scale(0);
+        background-color: #FF79DA;
+    }
+
 }
 
 @keyframes slideball{
@@ -286,7 +347,8 @@ nav>h2{
 .block_restau img{
     width: 100%;
     height: 160px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 25px 25px 0px 0px;
 }
 
@@ -316,7 +378,8 @@ nav>h2{
     font-size: 24px;
     color: #FFFFFF;
     box-sizing: border-box;
-    filter: drop-shadow(0px 0px 4px black);
+    -webkit-filter: drop-shadow(0px 0px 4px black);
+            filter: drop-shadow(0px 0px 4px black);
     transition: all 200ms 100ms;
         &:hover{
             color: $darkpurple;
@@ -342,7 +405,8 @@ footer{
 }
 
 footer>img{
-    filter: invert(100%);
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
     width: 20%;
 }
 
@@ -512,7 +576,8 @@ footer>a>i{
     .block_restau img{
         width: 100%;
         height: 140px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         border-radius: 25px 25px 0px 0px;
     }
 
@@ -535,7 +600,8 @@ footer>a>i{
         margin-top:4%;
         margin-left: 30%;
         box-sizing: border-box;
-        filter: drop-shadow(0px 0px 4px black);
+        -webkit-filter: drop-shadow(0px 0px 4px black);
+                filter: drop-shadow(0px 0px 4px black);
         transition: color 200ms;
             &:active{
                 color: $darkpurple;
@@ -552,7 +618,8 @@ footer>a>i{
     }
 
     footer>img{
-        filter: invert(100%);
+        -webkit-filter: invert(100%);
+                filter: invert(100%);
         width: 25%;
         padding: 4%;
 
@@ -749,7 +816,8 @@ footer>a>i{
     .block_restau img{
         width: 100%;
         height: 160px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         border-radius: 25px 25px 0px 0px;
     }
     
@@ -778,7 +846,8 @@ footer>a>i{
         margin-top: 10px;
         font-size: 24px;
         color: #FFFFFF;
-        filter: drop-shadow(0px 0px 4px black);
+        -webkit-filter: drop-shadow(0px 0px 4px black);
+                filter: drop-shadow(0px 0px 4px black);
         transition: all 200ms;
             &:active{
                 color: $darkpurple;
@@ -804,7 +873,8 @@ footer>a>i{
     }
     
     footer>img{
-        filter: invert(100%);
+        -webkit-filter: invert(100%);
+                filter: invert(100%);
         width: 20%;
         padding-left: 3%;
         padding-right: 5%;

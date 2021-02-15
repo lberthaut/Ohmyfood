@@ -27,7 +27,18 @@
   height: 100%;
   background-color: #332f32;
   opacity: 1;
+  -webkit-animation: backload 7400ms forwards ease-in;
   animation: backload 7400ms forwards ease-in;
+}
+
+@-webkit-keyframes backload {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 @keyframes backload {
@@ -40,39 +51,88 @@
   }
 }
 
-/* line 48, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 59, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .ball1 {
   width: 30px;
   height: 30px;
   border-radius: 25px;
   background-color: black;
+  -webkit-animation: slideball 1400ms both ease-in-out;
   animation: slideball 1400ms both ease-in-out;
+  -webkit-animation-iteration-count: 3;
   animation-iteration-count: 3;
   margin-top: 50vh;
 }
 
-/* line 58, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 71, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .ball2 {
   width: 30px;
   height: 30px;
   border-radius: 25px;
   background-color: black;
   margin-left: 2%;
+  -webkit-animation: slideball 1400ms 1400ms both ease-out;
   animation: slideball 1400ms 1400ms both ease-out;
+  -webkit-animation-iteration-count: 3;
   animation-iteration-count: 3;
   margin-top: 50vh;
 }
 
-/* line 69, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 84, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .ball3 {
   width: 30px;
   height: 30px;
   border-radius: 25px;
   background-color: black;
   margin-left: 2%;
+  -webkit-animation: slideball 1400ms 2800ms both ease-out;
   animation: slideball 1400ms 2800ms both ease-out;
+  -webkit-animation-iteration-count: 3;
   animation-iteration-count: 3;
   margin-top: 50vh;
+}
+
+@-webkit-keyframes slideball {
+  0% {
+    transform: scale(0);
+    background-color: #FF79DA;
+  }
+  10% {
+    transform: scale(0.2);
+  }
+  20% {
+    transform: scale(0.4);
+  }
+  30% {
+    transform: scale(0.6);
+    background-color: #9356DC;
+  }
+  40% {
+    transform: scale(0.5);
+    background-color: #FF79DA;
+  }
+  50% {
+    transform: scale(1);
+    background-color: #9356DC;
+  }
+  60% {
+    transform: scale(0.8);
+  }
+  70% {
+    transform: scale(0.6);
+    background-color: #9356DC;
+  }
+  80% {
+    transform: scale(0.4);
+    background-color: #bd58e2;
+  }
+  90% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(0);
+    background-color: #FF79DA;
+  }
 }
 
 @keyframes slideball {
@@ -118,27 +178,27 @@
   }
 }
 
-/* line 124, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 185, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 body {
   margin: 0;
   font-family: roboto, serif;
   position: absolute;
 }
 
-/* line 130, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 191, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 a {
   text-decoration: none;
   color: #000000;
 }
 
-/* line 135, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 196, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 header {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* line 141, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 202, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 header > figure {
   width: 100%;
   margin: 0 auto;
@@ -146,7 +206,7 @@ header > figure {
   padding-bottom: 20px;
 }
 
-/* line 148, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 209, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .localisation {
   width: 100%;
   display: flex;
@@ -160,12 +220,12 @@ header > figure {
   font-size: 24px;
 }
 
-/* line 160, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 221, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .localisation > i {
   padding-right: 5%;
 }
 
-/* line 164, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 225, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 section {
   background-color: #f6f6f6;
   padding-top: 50px;
@@ -173,19 +233,19 @@ section {
   text-align: center;
 }
 
-/* line 171, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 232, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 section > h1 {
   margin: 0 auto;
   font-size: 32px;
   font-weight: bold;
 }
 
-/* line 177, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 238, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 section > p {
   font-size: 26px;
 }
 
-/* line 181, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 242, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 section > input {
   background: linear-gradient(#FF79DA, #9356dc);
   border-radius: 50px;
@@ -200,14 +260,14 @@ section > input {
   cursor: pointer;
 }
 
-/* line 193, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 254, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 section > input:hover {
   background: linear-gradient(#9356dc, #FF79DA);
   opacity: 0.8;
   box-shadow: 9px 9px 33px -16px rgba(0, 0, 0, 0.75);
 }
 
-/* line 200, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 261, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 aside {
   display: flex;
   flex-direction: column;
@@ -217,13 +277,13 @@ aside {
   padding-bottom: 30px;
 }
 
-/* line 209, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 270, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 aside > h2 {
   padding-right: 42%;
   font-weight: bold;
 }
 
-/* line 214, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 275, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .block_use {
   display: flex;
   flex-direction: row;
@@ -239,18 +299,18 @@ aside > h2 {
   cursor: pointer;
 }
 
-/* line 227, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 288, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .block_use:hover {
   background-color: #eee5fa;
   transform: scale(1.1);
 }
 
-/* line 230, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 291, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .block_use:hover .fa.fa-mobile, .block_use:hover .fa.fa-list-ul, .block_use:hover .fas.fa-store.main-operation__icons {
   color: #9356dc;
 }
 
-/* line 236, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 297, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .fa.fa-mobile, .fa.fa-list-ul, .fas.fa-store.main-operation__icons {
   color: #454142;
   padding-left: 6%;
@@ -258,7 +318,7 @@ aside > h2 {
   transition: color;
 }
 
-/* line 243, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 304, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .purple_number {
   margin-left: -2%;
   width: 30px;
@@ -270,7 +330,7 @@ aside > h2 {
   position: absolute;
 }
 
-/* line 254, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 315, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 nav {
   background-color: #f6f6f6;
   width: 100%;
@@ -286,13 +346,13 @@ nav {
   box-shadow: 0px -2px 1px #cecece inset;
 }
 
-/* line 269, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 330, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 nav > h2 {
   padding-right: 51%;
   font-size: 36px;
 }
 
-/* line 274, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 335, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .block_restau {
   height: 230px;
   display: flex;
@@ -305,22 +365,23 @@ nav > h2 {
   box-shadow: 2px 2px 3px #d4d4d4;
 }
 
-/* line 286, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 347, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .block_restau img {
   width: 100%;
   height: 160px;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 25px 25px 0px 0px;
 }
 
-/* line 293, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 355, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .block_restau p {
   margin: 0 auto;
   display: block;
   padding-bottom: 8px;
 }
 
-/* line 299, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 361, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .text_restau {
   display: flex;
   flex-direction: column;
@@ -331,39 +392,40 @@ nav > h2 {
   color: #000000;
 }
 
-/* line 309, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 371, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .restau_title {
   font-weight: bold;
 }
 
-/* line 313, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 375, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .heart {
   margin-left: 35%;
   margin-top: 10px;
   font-size: 24px;
   color: #FFFFFF;
   box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 0px 4px black);
   filter: drop-shadow(0px 0px 4px black);
   transition: all 200ms 100ms;
 }
 
-/* line 321, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 384, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .heart:hover {
   color: #9356dc;
 }
 
-/* line 326, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 389, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .heart > i {
   transform: scale(1);
   transition: all 300ms;
 }
 
-/* line 329, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 392, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .heart > i:hover {
   transform: scale(1.2);
 }
 
-/* line 334, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 397, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 footer {
   display: flex;
   flex-direction: row;
@@ -374,13 +436,14 @@ footer {
   padding-top: 2%;
 }
 
-/* line 344, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 407, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 footer > img {
+  -webkit-filter: invert(100%);
   filter: invert(100%);
   width: 20%;
 }
 
-/* line 349, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 413, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 footer > a {
   display: flex;
   flex-direction: row;
@@ -391,46 +454,46 @@ footer > a {
   font-size: 12px;
 }
 
-/* line 359, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 423, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 footer > a > i {
   padding-right: 12%;
 }
 
-/* line 363, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+/* line 427, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
 .fa.fa-handshake-o {
   transform: rotate(-45deg);
 }
 
 /*Query Smartphone*/
 @media screen and (max-width: 480px) {
-  /* line 373, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 437, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .bloc_page {
     padding-top: 4%;
     margin: 0;
   }
-  /* line 378, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 442, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   body {
     margin: 0 auto;
     font-family: roboto, serif;
   }
-  /* line 383, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 447, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   a {
     text-decoration: none;
     color: #000000;
   }
-  /* line 388, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 452, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   header {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  /* line 394, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 458, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   header > figure {
     width: 100%;
     margin: 0 auto;
     text-align: center;
   }
-  /* line 401, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 465, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .localisation {
     width: 100%;
     display: flex;
@@ -441,24 +504,24 @@ footer > a > i {
     font-weight: bold;
     border-radius: 0;
   }
-  /* line 411, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 475, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .localisation > i {
     padding-right: 5%;
   }
-  /* line 415, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 479, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   section {
     background-color: #f6f6f6;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
   }
-  /* line 422, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 486, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   section > h1 {
     margin: 0 auto;
     font-size: 28px;
     font-weight: bold;
   }
-  /* line 428, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 492, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   section > input {
     background: linear-gradient(#FF79DA, #9356dc);
     border-radius: 50px;
@@ -470,12 +533,12 @@ footer > a > i {
     box-shadow: 0.5px 0.5px 2px #000;
     transition: all 200ms;
   }
-  /* line 438, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 502, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   section > input:active {
     background: linear-gradient(#9356dc, #FF79DA);
     opacity: 0.8;
   }
-  /* line 444, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 508, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   aside {
     display: flex;
     flex-direction: column;
@@ -483,12 +546,12 @@ footer > a > i {
     align-items: center;
     font-size: 20px;
   }
-  /* line 452, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 516, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   aside > h2 {
     padding-right: 40%;
     font-weight: bold;
   }
-  /* line 457, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 521, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .block_use {
     display: flex;
     flex-direction: row;
@@ -500,13 +563,13 @@ footer > a > i {
     margin-bottom: 25px;
     background-color: #f6f6f6;
   }
-  /* line 469, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 533, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   aside > i {
     color: #9356dc;
     padding-left: 6%;
     padding-right: 6%;
   }
-  /* line 474, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 538, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .purple_number {
     margin-left: -4%;
     width: 30px;
@@ -516,7 +579,7 @@ footer > a > i {
     text-align: center;
     color: #FFFFFF;
   }
-  /* line 484, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 548, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   nav {
     background-color: #f6f6f6;
     width: 100%;
@@ -528,11 +591,11 @@ footer > a > i {
     padding-bottom: 60px;
     border-radius: 0;
   }
-  /* line 496, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 560, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   nav > h2 {
     font-size: 30px;
   }
-  /* line 500, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 564, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .block_restau {
     height: 210px;
     display: flex;
@@ -544,41 +607,43 @@ footer > a > i {
     margin-bottom: 20px;
     box-shadow: 2px 2px 3px #d4d4d4;
   }
-  /* line 512, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 576, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .block_restau img {
     width: 100%;
     height: 140px;
+    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
   }
-  /* line 519, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 584, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .block_restau p {
     margin: 0 auto;
   }
-  /* line 523, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 588, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .text_restau {
     height: 70px;
     color: #000000;
   }
-  /* line 528, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 593, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .restau_title {
     font-weight: bold;
   }
-  /* line 532, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 597, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .heart {
     font-size: 24px;
     color: #FFFFFF;
     margin-top: 4%;
     margin-left: 30%;
     box-sizing: border-box;
+    -webkit-filter: drop-shadow(0px 0px 4px black);
     filter: drop-shadow(0px 0px 4px black);
     transition: color 200ms;
   }
-  /* line 540, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 606, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .heart:active {
     color: #9356dc;
   }
-  /* line 545, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 611, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   footer {
     display: flex;
     flex-direction: column;
@@ -587,13 +652,14 @@ footer > a > i {
     padding-bottom: 20px;
     align-items: initial;
   }
-  /* line 554, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 620, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   footer > img {
+    -webkit-filter: invert(100%);
     filter: invert(100%);
     width: 25%;
     padding: 4%;
   }
-  /* line 561, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 628, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   footer > a {
     display: flex;
     flex-direction: row;
@@ -605,15 +671,15 @@ footer > a > i {
     line-height: 0.2;
     padding-left: 4%;
   }
-  /* line 573, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 640, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   footer > a > i {
     padding: 0;
   }
-  /* line 577, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 644, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .fa.fa-cutlery {
     margin-right: 3%;
   }
-  /* line 581, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 648, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .fa.fa-handshake-o {
     transform: rotate(-45deg);
     margin-right: 2%;
@@ -622,35 +688,35 @@ footer > a > i {
 
 /*Query tablets*/
 @media screen and (min-width: 481px) and (max-width: 999px) {
-  /* line 593, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 660, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .bloc_page {
     margin-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
   }
-  /* line 599, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 666, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   body {
     font-family: roboto, serif;
   }
-  /* line 603, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 670, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   a {
     text-decoration: none;
     color: #000000;
   }
-  /* line 608, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 675, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   header {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  /* line 614, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 681, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   header > figure {
     width: 100%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 20px;
   }
-  /* line 621, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 688, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .localisation {
     width: 100%;
     display: flex;
@@ -663,28 +729,28 @@ footer > a > i {
     border-top-right-radius: 25px;
     font-size: 24px;
   }
-  /* line 633, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 700, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .localisation > i {
     padding-right: 5%;
   }
-  /* line 637, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 704, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   section {
     background-color: #f6f6f6;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
   }
-  /* line 644, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 711, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   section > h1 {
     margin: 0 auto;
     font-size: 32px;
     font-weight: bold;
   }
-  /* line 650, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 717, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   section > p {
     font-size: 26px;
   }
-  /* line 654, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 721, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   section > input {
     background: linear-gradient(#FF79DA, #9356dc);
     border-radius: 50px;
@@ -696,12 +762,12 @@ footer > a > i {
     box-shadow: 0.5px 0.5px 2px #000;
     transition: all 200ms;
   }
-  /* line 664, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 731, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   section > input:hover {
     background: linear-gradient(#9356dc, #FF79DA);
     opacity: 0.9;
   }
-  /* line 670, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 737, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   aside {
     display: flex;
     flex-direction: column;
@@ -710,12 +776,12 @@ footer > a > i {
     font-size: 24px;
     padding-bottom: 30px;
   }
-  /* line 679, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 746, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   aside > h2 {
     padding-right: 42%;
     font-weight: bold;
   }
-  /* line 684, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 751, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .block_use {
     display: flex;
     flex-direction: row;
@@ -728,18 +794,18 @@ footer > a > i {
     transition: all 300ms;
     position: relative;
   }
-  /* line 695, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 762, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .block_use:hover {
     background-color: #f6f6f6;
     transform: scale(1.1);
   }
-  /* line 701, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 768, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   aside i {
     color: #9356dc;
     padding-left: 6%;
     padding-right: 6%;
   }
-  /* line 706, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 773, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .purple_number {
     margin-left: -3%;
     width: 30px;
@@ -750,7 +816,7 @@ footer > a > i {
     color: #FFFFFF;
     position: absolute;
   }
-  /* line 717, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 784, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   nav {
     background-color: #f6f6f6;
     width: 100%;
@@ -765,12 +831,12 @@ footer > a > i {
     border-bottom-right-radius: 25px;
     box-shadow: 0px -2px 1px #cecece inset;
   }
-  /* line 732, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 799, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   nav > h2 {
     padding-right: 51%;
     font-size: 36px;
   }
-  /* line 737, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 804, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .block_restau {
     height: 230px;
     display: flex;
@@ -782,20 +848,21 @@ footer > a > i {
     margin-bottom: 20px;
     box-shadow: 2px 2px 3px #d4d4d4;
   }
-  /* line 749, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 816, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .block_restau img {
     width: 100%;
     height: 160px;
+    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
   }
-  /* line 756, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 824, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .block_restau p {
     margin: 0 auto;
     display: block;
     padding-bottom: 8px;
   }
-  /* line 762, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 830, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .text_restau {
     display: flex;
     flex-direction: column;
@@ -805,33 +872,34 @@ footer > a > i {
     padding-left: 5%;
     color: #000000;
   }
-  /* line 772, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 840, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .restau_title {
     font-weight: bold;
   }
-  /* line 776, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 844, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .heart {
     margin: 0 auto;
     margin-top: 10px;
     font-size: 24px;
     color: #FFFFFF;
+    -webkit-filter: drop-shadow(0px 0px 4px black);
     filter: drop-shadow(0px 0px 4px black);
     transition: all 200ms;
   }
-  /* line 783, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 852, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .heart:active {
     color: #9356dc;
   }
-  /* line 788, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 857, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .heart > i {
     transform: scale(1);
     transition: all 500ms;
   }
-  /* line 791, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 860, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .heart > i:hover {
     transform: scale(1.2);
   }
-  /* line 796, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 865, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   footer {
     display: flex;
     flex-direction: row;
@@ -841,14 +909,15 @@ footer > a > i {
     align-items: center;
     padding-top: 2%;
   }
-  /* line 806, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 875, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   footer > img {
+    -webkit-filter: invert(100%);
     filter: invert(100%);
     width: 20%;
     padding-left: 3%;
     padding-right: 5%;
   }
-  /* line 813, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 883, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   footer > a {
     display: flex;
     flex-direction: row;
@@ -861,11 +930,11 @@ footer > a > i {
     padding-left: 8%;
     text-align: center;
   }
-  /* line 826, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 896, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   footer > a > i {
     padding-right: 10%;
   }
-  /* line 830, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
+  /* line 900, ../P3/ohmyfood/CSS-SCSS/SCSS/style.SCSS */
   .fa.fa-handshake-o {
     transform: rotate(-45deg);
   }

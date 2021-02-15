@@ -63,7 +63,8 @@ header>figure{
 }
 
 .photo_restau>img{
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -98,7 +99,8 @@ h1{
     margin-left: 45%;
     font-size: 28px;
     color: $background2;
-    filter: drop-shadow(0px 0px 4px black);
+    -webkit-filter: drop-shadow(0px 0px 4px black);
+            filter: drop-shadow(0px 0px 4px black);
     transition: all 200ms 100ms;
         &:hover{
             color: $darkpurple;
@@ -185,15 +187,28 @@ h2{
 }
 
 .section_entree .block_food{
-    animation: translate_bar 800ms backwards ease-out;
+    -webkit-animation: translate_bar 800ms backwards ease-out;
+            animation: translate_bar 800ms backwards ease-out;
 }
 
 .section_plats .block_food{
-    animation: translate_bar 800ms 200ms backwards ease-out;
+    -webkit-animation: translate_bar 800ms 200ms backwards ease-out;
+            animation: translate_bar 800ms 200ms backwards ease-out;
 }
 
 .section_desserts .block_food{
-    animation: translate_bar 800ms 400ms backwards ease-out;
+    -webkit-animation: translate_bar 800ms 400ms backwards ease-out;
+            animation: translate_bar 800ms 400ms backwards ease-out;
+}
+
+@-webkit-keyframes translate_bar{
+    0%{
+        opacity: 0;
+        transform: translate(0, 50px)
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 @keyframes translate_bar{
@@ -268,7 +283,8 @@ footer{
 }
 
 footer>img{
-    filter: invert(100%);
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
     width: 20%;
 }
 
@@ -344,7 +360,8 @@ footer>a>i{
     }
 
     .photo_restau>img{
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 100%;
     }
 
@@ -377,7 +394,8 @@ footer>a>i{
         margin-right: 5%;
         font-size: 24px;
         color: $background2;
-        filter: drop-shadow(0px 0px 4px black);
+        -webkit-filter: drop-shadow(0px 0px 4px black);
+                filter: drop-shadow(0px 0px 4px black);
         transition: color 200ms;
             &:active{
                 color: $darkpurple;
@@ -490,7 +508,8 @@ footer>a>i{
     }
 
     footer>img{
-        filter: invert(100%);
+        -webkit-filter: invert(100%);
+                filter: invert(100%);
         width: 25%;
         padding: 4%;
     }
@@ -569,7 +588,8 @@ footer>a>i{
     }
     
     .photo_restau>img{
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 100%;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
@@ -721,7 +741,8 @@ footer>a>i{
     }
     
     footer>img{
-        filter: invert(100%);
+        -webkit-filter: invert(100%);
+                filter: invert(100%);
         width: 20%;
     }
     
