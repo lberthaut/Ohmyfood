@@ -777,4 +777,15 @@ footer > a > i {
   }
 }
 
+@media screen and (min-width: 1900px) {
+  /* line 750, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  .block_food > p {
+    margin-top: 2%;
+  }
+  /* line 754, ../P3/ohmyfood/CSS-SCSS/SCSS/stylemenu.SCSS */
+  .heart {
+    margin-left: 55%;
+  }
+}
+
 /*# sourceMappingURL=stylemenu.css.map */

@@ -743,3 +743,15 @@ footer>a>i{
         transform: rotate(-45deg);
     }
 }
+
+
+
+@media screen and (min-width: 1900px){
+    .block_food>p{
+        margin-top: 2%;
+    }
+
+    .heart{
+        margin-left: 55%;
+    }
+}
